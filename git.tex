@@ -1,0 +1,119 @@
+\documentclass{beamer}
+\title{git - the stupid content tracker}
+\date{October 25, 2013}
+
+\usefonttheme[onlylarge]{structurebold}
+\setbeamerfont*{frametitle}{size=\normalsize,series=\bfseries}
+\setbeamertemplate{navigation symbols}{}
+
+\usepackage[english]{babel}
+\usepackage{amsmath}
+\usepackage{tabularx}
+\usepackage{amsfonts}
+\usepackage{float}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{setspace}
+\usepackage{listings}
+\usepackage{color}
+
+\usepackage[scaled]{beramono}
+
+\definecolor{green}{HTML}{00bb00}
+
+\lstset{
+  basicstyle=\ttfamily\footnotesize,
+  keywordstyle=\color[rgb]{0,0,1},
+  commentstyle=\color[rgb]{0.133,0.545,0.133},
+  stringstyle=\color[rgb]{1,0,1}
+}
+
+\newenvironment{myitemize}{
+  \begin{itemize}
+  \setlength{\itemsep}{5pt}
+}{\end{itemize}}
+
+\newcommand{\code}[1]{
+  \lstinline[language=bash,basicstyle=\ttfamily]{#1}
+}
+  
+\begin{document}
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+\begin{frame}[t,fragile]{What is git?}
+\begin{myitemize}
+  \item<1->
+    A revision control system that stores all history of your code in an
+    immutable database.
+  \item<2->
+    Each repository is distributed. (No central servers!)
+  \item<3->
+    All interaction with a repository is done using the \code{git} command.
+  \item<4->
+    The man pages for \code{git} can be cryptic; Google or Stack Overflow is 
+    usually the better option.
+\end{myitemize}
+\end{frame}
+
+\begin{frame}[t,fragile]{Sharing is caring}
+\begin{myitemize}
+  \item<1->
+    Two different types of repositories: \textbf{bare} and \textbf{not} bare.
+  \item<2->
+    Not bare repositories contain a working set of files for you to manage.
+    Typically, only a \emph{single} person has access to a non bare repository.
+  \item<3->
+    Bare repositories contain a \code{git} database, but lack a working set
+    of files.
+    Bare repositories are typically shared with others.
+  \item<4->
+    We already have a lot of bare repositories in
+    \code{/r/bcb/repositories}.
+  \item<5->
+    We share by \emph{pushing} and we take by \emph{pulling}.
+\end{myitemize}
+\end{frame}
+
+\begin{frame}[t,fragile]{What is GitHub?}
+\begin{myitemize}
+  \item<1->
+    Core feature: a place to store \textbf{a} bare repository that can be 
+    shared with others.
+  \item<2->
+    Lots of other stuff: issue tracker, wiki, pretty interface, etc.
+  \item<3->
+    Useful for sharing your code with the world, but not necessary for
+    collaborating with others in our department.
+\end{myitemize}
+\end{frame}
+
+\begin{frame}[t,fragile]{What goes in a git repository?}
+\begin{myitemize}
+  \item<1->
+    \textbf{Yes}: Source code, documentation, license, small data files.
+  \item<2->
+    \textbf{No}: Executables, large data files, archives.
+  \item<3->
+    General rules. They can be broken, but be careful: once a file is
+    committed to your repository, it can be difficult to remove from your
+    repository's database completely.
+\end{myitemize}
+\end{frame}
+
+\begin{frame}[t,fragile]{Getting started}
+\begin{myitemize}
+  \item<1->
+    Get a GitHub account.
+  \item<2->
+    Tell \code{git} who you are (included in your commits):
+\begin{lstlisting}[language=bash]
+$ git config --global user.name "Full Name"
+$ git config --global user.email "You@Domain.com"
+\end{lstlisting}
+\end{myitemize}
+\end{frame}
+
+\end{document}
