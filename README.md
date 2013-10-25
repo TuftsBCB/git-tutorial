@@ -3,7 +3,7 @@ command used is explained.
 
 
 Your first time with git
-========================
+------------------------
 If you've never used `git` before, then make sure it's installed and run the 
 following commands so that your name and email will show up with your commits:
 
@@ -12,7 +12,7 @@ following commands so that your name and email will show up with your commits:
 
 
 Creating a repository and basic commands
-========================================
+----------------------------------------
 Let's initialize a fresh new repository that will contain a list of our 
 favorite foods in a directory of our choosing:
 
