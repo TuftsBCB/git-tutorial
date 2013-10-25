@@ -143,7 +143,7 @@ your GitHub username.)
 
 The `git remote add` command takes two arguments: a name of your choosing and a
 remote location of a git repository. In this case, the
-`https://github.comTuftsBCB/foods` syntax indicates HTTPS. Typically, using
+`https://github.com/TuftsBCB/foods` syntax indicates HTTPS. Typically, using
 SSH is more convenient since you can use your public key to login
 automatically. For SSH, you can use `git@github.com:TuftsBCB/foods` instead.
 
