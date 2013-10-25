@@ -286,7 +286,7 @@ contain the repository.
 
 Let's continue trying to provoke a merge conflict by changing the first line
 again, but to something other than what you changed it to before. Then commit
-your change, and this time, push your changes to github:
+your change:
 
     $ vim andrew
     $ cat andrew
