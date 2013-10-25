@@ -165,7 +165,7 @@ username and password:
 to enter your username and password every time you push:
 https://github.com/settings/ssh)
 
-You should now be able to go https://github.com/TuftsBCB/foods and see your
+You should now be able to go to https://github.com/TuftsBCB/foods and see your
 changes show up.
 
 The `git push` command here takes two arguments: the name of the remote (which
