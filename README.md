@@ -376,6 +376,7 @@ Since I like both fries and hot dogs, let's keep both:
        bb9954b..68a3c6a  master -> master
 
 Once you've made the change, commit it to your repository and push the changes 
-back to GitHub. (If you wanted, you could go back to your `foods-tmp` 
-repository and pull the new changes from GitHub without any merge conflicts.)
+back to GitHub. That's it; merge conflict resolved! (If you wanted, you could 
+go back to your `foods-tmp` repository and pull the new changes from GitHub 
+without any merge conflicts.)
 
