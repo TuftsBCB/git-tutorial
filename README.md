@@ -1,7 +1,19 @@
 This document contains a walkthrough of basic git usage with GitHub. Each 
 command used is explained.
 
-First, let's initialize a fresh new repository that will contain a list of our 
+
+Your first time with git
+========================
+If you've never used `git` before, then make sure it's installed and run the 
+following commands so that your name and email will show up with your commits:
+
+    $ git config --global user.name "Full Name"
+    $ git config --global user.email "You@Domain.com"
+
+
+Creating a repository and basic commands
+========================================
+Let's initialize a fresh new repository that will contain a list of our 
 favorite foods in a directory of our choosing:
 
     $ mkdir foods
@@ -88,5 +100,31 @@ repository:
     # On branch master
     nothing to commit, working directory clean
 
+Let's add some of our favorite foods to the file and repeat the process above:
 
+    $ vim andrew
+    $ cat andrew
+    Buffalo chicken
+    Cheeseburger
+    Pizza
+    $ git status
+    # On branch master
+    # Changes not staged for commit:
+    #   (use "git add <file>..." to update what will be committed)
+    #   (use "git checkout -- <file>..." to discard changes in working direct
+    #
+    #       modified:   andrew
+    #
+    no changes added to commit (use "git add" and/or "git commit -a")
+    $ git add andrew
+    $ git commit -m "Added some of my favorite foods."
+    [master 31c5f4d] Added some of my favorite foods.
+     1 file changed, 3 insertions(+)
+    $ git status
+    # On branch master
+    nothing to commit, working directory clean
+
+As you use git more, this process will become very familiar: make changes, add 
+changes to the staging area, and then commit the changes in the staging area to 
+your repository.
 
