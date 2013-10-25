@@ -346,7 +346,8 @@ where the conflict is:
 
 The `HEAD` portion indicates the version in your local repository, while the
 second portion indicates the version that exists in GitHub (along with an
-identifier for the specific commit).
+identifier for the specific commit). Conflicts are always in this format, so it 
+is easy to use your editor or `grep` to find where the conflicts are in a file.
 
 We are now free to merge this conflict however we deem suitable. When we're
 done, we'll need to remove the lines containing `<<<...`, `===...` and
