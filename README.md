@@ -161,7 +161,8 @@ username and password:
     To https://github.com/BurntSushi/foods
      * [new branch]      master -> master
 
-(Protip: Add your SSH public key to your GitHub account here:
+(Protip: Add your SSH public key to your GitHub account if you don't want
+to enter your username and password every time you push:
 https://github.com/settings/ssh)
 
 You should now be able to go https://github.com/TuftsBCB/foods and see your
